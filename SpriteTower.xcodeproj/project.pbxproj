@@ -15,6 +15,8 @@
 		858C5A4819C861F800B993AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 858C5A4719C861F800B993AE /* Images.xcassets */; };
 		858C5A4B19C861F800B993AE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 858C5A4919C861F800B993AE /* LaunchScreen.xib */; };
 		858C5A5719C861F800B993AE /* SpriteTowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858C5A5619C861F800B993AE /* SpriteTowerTests.swift */; };
+		85D5ED161A1CE3C500862BD4 /* TowerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D5ED151A1CE3C500862BD4 /* TowerEngine.swift */; };
+		85D5ED171A1CE3DA00862BD4 /* TowerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D5ED151A1CE3C500862BD4 /* TowerEngine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,7 @@
 		858C5A5019C861F800B993AE /* SpriteTowerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpriteTowerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		858C5A5519C861F800B993AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		858C5A5619C861F800B993AE /* SpriteTowerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteTowerTests.swift; sourceTree = "<group>"; };
+		85D5ED151A1CE3C500862BD4 /* TowerEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TowerEngine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,7 @@
 				858C5A4719C861F800B993AE /* Images.xcassets */,
 				858C5A4919C861F800B993AE /* LaunchScreen.xib */,
 				858C5A3A19C861F800B993AE /* Supporting Files */,
+				85D5ED151A1CE3C500862BD4 /* TowerEngine.swift */,
 			);
 			path = SpriteTower;
 			sourceTree = "<group>";
@@ -167,6 +171,7 @@
 				TargetAttributes = {
 					858C5A3619C861F800B993AE = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = CSA2U5KAPZ;
 					};
 					858C5A4F19C861F800B993AE = {
 						CreatedOnToolsVersion = 6.0;
@@ -222,6 +227,7 @@
 				858C5A4119C861F800B993AE /* GameScene.swift in Sources */,
 				858C5A4319C861F800B993AE /* GameViewController.swift in Sources */,
 				858C5A3D19C861F800B993AE /* AppDelegate.swift in Sources */,
+				85D5ED161A1CE3C500862BD4 /* TowerEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				858C5A5719C861F800B993AE /* SpriteTowerTests.swift in Sources */,
+				85D5ED171A1CE3DA00862BD4 /* TowerEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,9 +351,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SpriteTower/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -354,9 +364,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SpriteTower/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -413,6 +426,7 @@
 				858C5A5C19C861F800B993AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		858C5A5D19C861F800B993AE /* Build configuration list for PBXNativeTarget "SpriteTowerTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +435,7 @@
 				858C5A5F19C861F800B993AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
